@@ -100,10 +100,15 @@ class MainWindow(QMainWindow):
                 gridline-color: #eee;
                 background-color: #fff;
                 font-size: 13px;
+                alternate-background-color: #f8f9fa;
             }
             QTableWidget::item {
                 padding: 10px 8px;
                 border-bottom: 1px solid #eee;
+                color: #333;
+            }
+            QTableWidget::item:alternate {
+                background-color: #f8f9fa;
                 color: #333;
             }
             QTableWidget::item:selected {
@@ -111,7 +116,7 @@ class MainWindow(QMainWindow):
                 color: #333;
             }
             QTableWidget::item:hover {
-                background-color: #f5f5f5;
+                background-color: #f0f0f0;
             }
             QHeaderView::section {
                 background-color: #f8f9fa;
